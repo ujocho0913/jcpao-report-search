@@ -15,7 +15,7 @@ st.title("Enter your Police Report Number")
 
 df = pd.read_csv("JCPAO Data_01312025.csv", encoding='utf-8')
 
-report_number = st.text_input("")
+report_number = st.text_input(label="Enter your Police Report Number", label_visibility="hidden")
 
 if st.button("Search"):
     if len(report_number) >= 5: 

@@ -1,5 +1,7 @@
 import streamlit as st
 
+# st.sidebar.markdown("Jackson County Prosecuting Attorney's Office")
+
 pages = {
     "Police Report Search Tool": [
         st.Page("search_tool.py", title="Check Your Report Status Here")
@@ -11,5 +13,8 @@ pages = {
     ],
 }
 
+
+st.sidebar.caption("Results based on system data as of 2025-01-28")
 pg = st.navigation(pages)
+
 pg.run()
